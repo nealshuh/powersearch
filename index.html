@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Franchise Power Search</title>
+  <script src="franchises.js"></script>
+</head>
+
+<body>
+  <h1>Franchise Power Search</h1>
+  <p>Select your criteria, and we will display franchises that meet it.</p>
+  <h2>Search Options</h2>
+  <table>
+    <tr>
+      <th class = "first-table">Liquid Capital Available</th>
+      <th class = "first-table">Number of Operating Units</th>
+      <th class = "first-table">Average Number of Employees</th>
+    </tr>
+    <tr>
+      <td class = "first-table"><select id="liq">
+          <option value selected>Choose Amount</option>
+          <option value="100000">$100,000</option>
+          <option value="150000">$150,000</option>
+        </select></td>
+        <td class = "first-table"><select id="operating">
+            <option value selected>Choose Amount</option>
+            <option value="100">51 - 100</option>
+            <option value="250">100 - 250</option>
+          </select></td>
+      <td class = "first-table"><select id="employee">
+          <option value selected>Choose Amount</option>
+          <option value="1">0 - 1</option>
+          <option value="4">2 - 4</option>
+        </select></td>
+    </tr>
+  </table>
+  <h2>Industry Categories</h2>
+  <h3><strong>Alternative Healthcare Services</strong></h3>
+  <table>
+    <tr>
+      <td class = "first-table">
+        <input class = "checkboxes" type="checkbox" name="Medical Marijuana" value="true"><h4>Medical Marijuana</h4>
+      </td>
+      <td class = "first-table">
+        <input class = "checkboxes" type="checkbox" name="Cryotherapy" value="true"><h4>Cryotherapy</h4>
+      </td>
+      <td class = "first-table">
+        <input class = "checkboxes" type="checkbox" name="Medical Testing" value="true"><h4>Medical Testing</h4>
+      </td>
+    </tr>
+  </table>
+  <h3>Automotive</h3>
+  <table>
+    <tr>
+      <td class = "first-table">
+        <input class = "checkboxes" type="checkbox" name="Auto Service" value="true"><h4>Auto Service</h4>
+      </td>
+      <td class = "first-table">
+        <input class = "checkboxes" type="checkbox" name="Auto Body" value="true"><h4>Auto Body</h4>
+      </td>
+      <td class = "first-table">
+        <input class = "checkboxes" type="checkbox" name="Driver Training" value="true"><h4>Driver Training</h4>
+      </td>
+    </tr>
+    <tr>
+      <td class = "first-table">
+        <input class = "checkboxes" type="checkbox" name="Oil Change" value="true"><h4>Oil Change</h4>
+      </td>
+      <td class = "first-table">
+        <input class = "checkboxes" type="checkbox" name="Tires" value="true"><h4>Tires</h4>
+      </td>
+      <td class = "first-table">
+        <input class = "checkboxes" type="checkbox" name="Auto Paint" value="true"><h4>Auto Paint</h4>
+      </td>
+    </tr>
+  </table>
+  <button id="powersearch" value="Power Search" style="margin-left: 0px;", onclick="powersearch();" class="btn powersearch">Power Search</button>
+  <br></br>
+  <table id="results">
+    <tr><th>Name</th>
+      <th>Liquid Capital</th>
+      <th>Operating Units</th>
+      <th>Number of Employees</th>
+      <th>Industry</th>
+      <th>Sub-Industry</th></tr>
+  </table>
+</body>
+
+</html>
